@@ -1,0 +1,335 @@
+/* Reset some basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-family: Aptly;
+  background-color: #f;
+}
+
+footer {
+  background-color: #FFFFFF;
+  padding: 1rem;
+}
+
+footer h1 {
+  color: white;
+  text-align: left;
+}
+
+nav {
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #7B1E7A;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  padding: 0.7rem;
+  border-radius: 100px;
+}
+
+nav ul li a:hover {
+  background-color: #7AFDD6;
+  color: black;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.section-container {
+  background: #7AFDD6;
+  align-content: center;
+  padding: 1rem;
+}
+
+.titulo-cafe {
+  font-family: Aptly;
+  color: #7B1E7A;
+	font-size: 20px;
+}
+
+.imagen-cafe-texto {
+  display: flex;
+  align-items: center;
+	font: Tenso;
+	color: black;
+	font-size: 16px;
+}
+
+.imagen-cafe {
+  margin-right: 20px;
+}
+
+.texto-cafe {
+  width: 50%;
+  margin-left: 10px;
+  color: #7A0084;
+	font: Aptly;
+}
+
+.granos {
+  width: 130px;
+  height: auto;
+}
+
+.imagen-cafe {
+  border-radius: 20px;
+  background: #FFFFFF;
+  width: 470px;
+  height: 255px;
+}
+
+.imagen-cafe img {
+  max-width: 450px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+section h2 {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #7B1E7A;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer ul li a:hover {
+  color: #ccc;
+}
+
+.redes {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  align-content: center;
+}
+
+#productos {
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.fila-productos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.producto {
+  width: 25%;
+  margin: 1rem;
+  margin-top: 60px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.producto img {
+  width: 100%;
+  height: autopx;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Aptly;
+}
+
+.producto p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: Tenso;
+}
+
+.producto ul {
+  list-style: none;
+  padding: 0;
+  font-family: Tenso;
+}
+
+.producto ul li {
+  margin-bottom: 0.5rem;
+}
+
+.mision-vision {
+  background-color: #7AFDD6;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mision-vision h2 {
+  margin-bottom: 1rem;
+  color: #7B1E7A;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.mision-vision p {
+  font-family: Tenso;
+  color: black;
+  text-align: center;
+}
+
+.valores {
+  background-color: aquamarine;
+	display: flex;
+  flex-direction: column; /* Para apilar los elementos verticalmente */
+  justify-content: center; /* Para centrar horizontalmente */
+  align-items: center; /* Opcional: Para centrar verticalmente */
+}
+
+.valores h2 {
+  font-family: Aptly;
+  color: #7B1E7A;
+  margin-right: 45px;
+  margin-left: 30px;
+}
+
+.valores ul {
+  font-family: Tenso;
+  color: black;
+  
+}
+.titulo-productos h2 {
+  font-family: Aptly;
+  color: #333; 
+	margin-left: 30px;
+
+}
+.vertical-video {
+    width: auto; 
+	max-height: 300px;
+    margin:  auto; 
+    display: block;
+}
+.menu-toggle {
+    display: none; /* Ocultar el botón de menú en pantallas grandes */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Mover la navegación a la derecha */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .imagen-cafe-texto {
+        flex-direction: column; /* Apilar elementos en pantallas pequeñas */
+    }
+    .imagen-cafe {
+        order: 2; /* Cambiar el orden para que la imagen esté debajo en pantallas pequeñas */
+    }
+    .titulo-cafe {
+        order: 1; /* Cambiar el orden para que el texto esté arriba en pantallas pequeñas */
+        text-align: center; /* Centrar texto en pantallas pequeñas */
+    }
+	 .menu-toggle {
+        display: block; /* Mostrar el botón de menú en pantallas pequeñas */
+    }
+
+    nav {
+        display: none; /* Ocultar la navegación en pantallas pequeñas */
+        flex-direction: column; /* Apilar elementos en el menú desplegable */
+        position: absolute;
+        top: 50px; /* Posicionar el menú debajo del encabezado */
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav.active {
+        display: flex; /* Mostrar la navegación cuando el menú está abierto */
+    }
+
+    nav ul {
+        flex-direction: column; /* Apilar elementos en el menú desplegable */
+}
+	  .container {
+        padding: 0 20px; /* Añadir espacio en los lados para pantallas pequeñas */
+		  flex-direction: column;
+    }
+
+    .producto {
+        width: 100%; /* Hacer que los productos ocupen todo el ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Añadir espacio entre productos en pantallas pequeñas */
+    }
+}
+
+/* Media queries para pantallas medianas (tabletas) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0.5rem; /* Reducir el relleno en pantallas medianas */
+  }
+
+  .producto {
+    width: 45%; /* Hacer que los productos ocupen el 45% del ancho en pantallas medianas */
+  }
+	  .fila-productos {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que los productos se envuelvan en pantallas más pequeñas */
+        justify-content: space-between; /* Distribuir uniformemente los productos en filas */
+    }
+
+    .producto {
+        width: calc(33.333% - 20px); /* Hacer que cada producto ocupe el 33.33% del ancho menos el espacio entre ellos */
+        margin-bottom: 20px; /* Añadir espacio entre productos */
+    }
+}
+
+/* Media queries para pantallas grandes (computadoras) */
+@media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 1400px; /* Aumentar el ancho máximo en pantallas grandes */
+  }
+
+  .producto {
+    width: 25%; /* Hacer que los productos ocupen el 25% del ancho en pantallas grandes */
+  }
+}
+

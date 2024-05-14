@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="Estiloweb.css">
+	<script>
+        // Aquí va tu código JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('nav').classList.toggle('active');
+            });
+        });
+		 </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo FMC_1.png" alt="Flor de mi Corazón logo" class="logo">
+			 <button class="menu-toggle">☰</button>
+            <nav>
+                <ul>
+					
+                    <li><a href="Productos.html" >productos</a></li>
+                    <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li></ul>
+            </nav>
+        </div>
+    </header>
+<section id="sobre-nuestro-cafe" class="section-container">
+ <div class="imagen-cafe-texto">
+  <div class="imagen-cafe">
+    <img src="https://images.pexels.com/photos/14997070/pexels-photo-14997070/free-photo-of-granos-alubias-judias-cafeina.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de café">
+  </div>
+  <div class="titulo-cafe">
+    <h2> Flor de mi Corazón: Café artesanal con sabor a tradición</h2>
+    <p class="imagen-cafe-texto">El café artesanal es mucho más que una simple bebida; es una experiencia sensorial que nos transporta a través de los sentidos hacia la esencia misma de la cultura cafetera. Ese exquisito producto se distingue por su cuidadoso proceso de cultivo, cosecha y tostado, llevado a cabo con dedicación y maestría por expertos artesanos del café.</p>
+  </div>
+</div>
+</section>
+<section id="productos">
+  <div class="fila-productos">
+    <div class="producto">
+      <img src="bolsa de cafe.jpg" alt="Imagen del producto 1">
+      <h3>cafe soluble</h3>
+      <p>bolsa de cafe soluble</p>
+      <ul>
+        <li>Cafe de soluble</li>
+        <li>200g</li>
+      </ul>
+    </div>
+    <div class="producto">
+      <img src="bolsa de cafe.jpg" alt="Imagen del producto 2">
+      <h3>cafe de grano</h3>
+      <p>bolsa de cafe de grano artesanal</p>
+      <ul>
+        <li>cafe de grano</li>
+        <li>250G</li>
+    
+      </ul>
+    </div>
+    </div>
+  <div class="fila-productos">
+    </div>
+  </section>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Avisos de privacidad</a></li>
+	 <a href="https://www.facebook.com/flordemicora/"><img  class="redes" src="https://cdn.icon-icons.com/icons2/2845/PNG/512/facebook_logo_icon_181322.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/flordelrey/p/CrogIY2vnKV/"><img  class="redes" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Instagram_logo.png" alt="Instagram"></a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
